@@ -23,3 +23,6 @@ build/libs 안에 내가 만든 spring 프로젝트를 jar로 만들어 줌.
 
 #### `./gradlew clean`
 이전에 만들었던 빌드를 삭제함
+
+#### `./gradlew clean build`
+클린 후 
