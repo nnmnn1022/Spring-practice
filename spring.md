@@ -14,5 +14,12 @@ Artifact는 결과물의 이름을 넣는다.
 템플릿 엔진은 다른 선택지가 있지만 현재는 *Thymeleaf* 사용
 
 ### Memo
-#### 스프링 부트 라이브러리
 ![image](https://user-images.githubusercontent.com/41253926/175759265-d41bc9c3-e7ea-43ce-b5c6-caee647b6ca0.png)
+
+#### `./gradlew build`
+build/libs 안에 내가 만든 spring 프로젝트를 jar로 만들어 줌.
+실행시키면 서버를 구동시키고 있는 것과 동일하게 굴러감
+이 파일을 서버에 넣고 실행만 시키면 됨.
+
+#### `./gradlew clean`
+이전에 만들었던 빌드를 삭제함
