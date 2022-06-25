@@ -12,3 +12,7 @@ Artifact는 결과물의 이름을 넣는다.
 ### Dependencies
 기본적으로 *Spring Web*
 템플릿 엔진은 다른 선택지가 있지만 현재는 *Thymeleaf* 사용
+
+### Memo
+#### 스프링 부트 라이브러리
+![image](https://user-images.githubusercontent.com/41253926/175759265-d41bc9c3-e7ea-43ce-b5c6-caee647b6ca0.png)
