@@ -26,3 +26,7 @@ build/libs 안에 내가 만든 spring 프로젝트를 jar로 만들어 줌.
 
 #### `./gradlew clean build`
 클린 후 
+
+## Template Engine
+템플릿 엔진을 통해 변수를 사용할 수 있는데,
+html을 넘기기 전에 처리를 하기 때문에 변수가 아닌 단순 String만 넘어가게 된다.
