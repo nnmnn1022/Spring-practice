@@ -6,9 +6,12 @@ import hello.hellospring.repository.MemberRepository;
 import java.util.List;
 import java.util.Optional;
 
+// 서비스에서 비즈니스 로직 만들기
+//@Service
 public class MemberService {
     private final MemberRepository memberRepository;
 
+//    @Autowired
     public MemberService(MemberRepository memberRepository) {
         this.memberRepository = memberRepository;
     }

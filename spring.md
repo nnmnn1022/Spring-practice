@@ -30,3 +30,8 @@ build/libs 안에 내가 만든 spring 프로젝트를 jar로 만들어 줌.
 ## Template Engine
 템플릿 엔진을 통해 변수를 사용할 수 있는데,
 html을 넘기기 전에 처리를 하기 때문에 변수가 아닌 단순 String만 넘어가게 된다.
+
+### 스프링 빈을 등록하는 2가지 방법
+- 컴포넌트 스캔과 자동 의존관계 설정 : @Controller, @Serviece, @Repository 이 어노테이션 안에는 @Component 어노테이션이 있음. 그래서 컴포넌트 스캔방식
+
+- 자바 코드로 직접 스프링 빈 등록하기 : 

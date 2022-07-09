@@ -4,6 +4,7 @@ import hello.hellospring.domain.Member;
 
 import java.util.*;
 
+//@Repository // 데이터 저장
 public class MemoryMemberRepository implements MemberRepository {
 
     private static Map<Long, Member> store = new HashMap<>();
