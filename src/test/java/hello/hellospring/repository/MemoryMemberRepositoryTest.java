@@ -16,7 +16,7 @@ class MemoryMemberRepositoryTest {
 //    그렇지 않으면 순서에 의존한 테스트가 되기 때문에 신뢰성을 얻기 힘듦
     @AfterEach
     public void afterEach() {
-        repository.clareStore();
+        repository.clearStore();
     }
 
     @Test

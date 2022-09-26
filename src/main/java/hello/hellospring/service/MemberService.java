@@ -16,10 +16,14 @@ public class MemberService {
         this.memberRepository = memberRepository;
     }
 
-    // 회원 가입
+    /**
+     * 회원가입
+     */
     public Long join(Member member){
         //중복회원 검증
         validateDuplicateMember(member);
+
+        // ctrl + alt + shift + T 로 리팩토링 관련 기능 확인 가능
 
         memberRepository.save(member);
         return member.getId();
@@ -35,8 +39,10 @@ public class MemberService {
                 });
     }
 
+    /**
+     * 전체 회원 조회
+     */
     public List<Member> findMembers() {
-        // 전체 회원 조회
         return memberRepository.findAll();
     }
 

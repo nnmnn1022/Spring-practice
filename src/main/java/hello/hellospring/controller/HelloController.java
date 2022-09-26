@@ -40,6 +40,7 @@ public class HelloController {
     static class Hello {
         private String name;
 
+        // java bean 표준 방식 getter / setter, porperty 접근 방식
         public String getName() {
             return name;
         }
@@ -47,6 +48,5 @@ public class HelloController {
         public void setName(String name) {
             this.name = name;
         }
-
     }
 }
