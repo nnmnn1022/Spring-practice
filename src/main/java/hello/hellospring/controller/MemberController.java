@@ -4,8 +4,11 @@ import hello.hellospring.domain.Member;
 import hello.hellospring.service.MemberService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+
+import java.util.List;
 
 // 컨트롤러를 통해서 외부 요청을 받는다.
 // 컨트롤러는 어쩔 수 없다. 스프링이 관리하는 친구
@@ -29,9 +32,19 @@ public class MemberController {
         Member member = new Member();
         member.setName(form.getName());
 
+        // sout =
+        System.out.println("member = " + member.getName());
         memberService.join(member);
 
         return "redirect:/";
+    }
+
+    @GetMapping("/members")
+    public String List(Model model){
+        List<Member> members = memberService.findMembers();
+        model.addAttribute("members", members);
+        return "members/memberList";
+
     }
 
 }

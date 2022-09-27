@@ -36,3 +36,7 @@ html을 넘기기 전에 처리를 하기 때문에 변수가 아닌 단순 Stri
 
 - 자바 코드로 직접 스프링 빈 등록하기 : main 클래스가 있는 폴더에 SpringConfig라는 클래스를 만들어서 빈을 직접 추가하는 방식
 
+
+# Spring 한글 처리하기
+- application.properties 파일 열기
+- 
