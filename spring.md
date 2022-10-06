@@ -40,3 +40,6 @@ html을 넘기기 전에 처리를 하기 때문에 변수가 아닌 단순 Stri
 # Spring 한글 처리하기
 - application.properties 파일 열기
 - 
+
+# Mybatis 연결하기
+- https://devncj.tistory.com/48
