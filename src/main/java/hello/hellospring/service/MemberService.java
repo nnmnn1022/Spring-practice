@@ -43,7 +43,9 @@ public class MemberService {
      * 전체 회원 조회
      */
     public List<Member> findMembers() {
-        return memberRepository.findAll();
+        List<Member> a = memberRepository.findAll();
+        System.out.println(a.get(0).getName());
+        return a;
     }
 
     public Optional<Member> findOne(Long memberId){

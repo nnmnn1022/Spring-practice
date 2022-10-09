@@ -1,11 +1,20 @@
 package hello.hellospring.repository;
 
 import hello.hellospring.domain.Member;
+import org.apache.ibatis.session.SqlSession;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 import java.util.Optional;
 
-public class MybatisMemberRepository implements MemberRepository {
+@Repository
+public class MybatisMemberRepository implements MemberRepository{
+
+    private String ns = "MemberMapper.";
+    @Autowired
+    SqlSession session;
+
     @Override
     public Member save(Member member) {
         return null;
@@ -23,6 +32,6 @@ public class MybatisMemberRepository implements MemberRepository {
 
     @Override
     public List<Member> findAll() {
-        return null;
+        return session.selectList(ns +"findAll");
     }
 }
